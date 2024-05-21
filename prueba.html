@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textitienda</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            position: relative;
+            width: 100%;
+            padding: 10px 0;
+            background-color: #f8f8f8;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px;
+            height: 50px;
+        }
+        .menu.container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            width: 660px; /* Ajustar el ancho para acomodar cuatro botones en una fila */
+            margin-top: 20px;
+        }
+        .custom-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            border: none;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            width: 150px;
+            height: 150px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .custom-button img {
+            max-width: 100px;
+            max-height: 100px;
+        }
+        .custom-button span {
+            margin-top: 10px;
+        }
+        .custom-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="imag/LOGO.png" alt="LOGO" class="logo">
+        <div class="menu container">
+            <a href="#" class="logo-text">Logo Text</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="imag/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="indx.html">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Producto</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Regístrate</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="imag/car.svg" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="button-container">
+        <a href="pagina1.html" class="custom-button">
+            <img src="ruta/a/imagen1.jpg" alt="Imagen 1">
+            <span>Nombre 1</span>
+        </a>
+        <a href="pagina2.html" class="custom-button">
+            <img src="ruta/a/imagen2.jpg" alt="Imagen 2">
+            <span>Nombre 2</span>
+        </a>
+        <a href="pagina3.html" class="custom-button">
+            <img src="ruta/a/imagen3.jpg" alt="Imagen 3">
+            <span>Nombre 3</span>
+        </a>
+        <a href="pagina4.html" class="custom-button">
+            <img src="ruta/a/imagen4.jpg" alt="Imagen 4">
+            <span>Nombre 4</span>
+        </a>
+        <a href="pagina5.html" class="custom-button">
+            <img src="ruta/a/imagen5.jpg" alt="Imagen 5">
+            <span>Nombre 5</span>
+        </a>
+        <a href="pagina6.html" class="custom-button">
+            <img src="ruta/a/imagen6.jpg" alt="Imagen 6">
+            <span>Nombre 6</span>
+        </a>
+        <a href="pagina7.html" class="custom-button">
+            <img src="ruta/a/imagen7.jpg" alt="Imagen 7">
+            <span>Nombre 7</span>
+        </a>
+        <a href="pagina8.html" class="custom-button">
+            <img src="ruta/a/imagen8.jpg" alt="Imagen 8">
+            <span>Nombre 8</span>
+        </a>
+    </div>
+
+    <script src="scrip.js"></script>
+</body>
+</html>
